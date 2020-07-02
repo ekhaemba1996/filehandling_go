@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"flag"
-	"filehandling"
+	"github.com/ekhaemba1996/filehandling_go/fileparser"
 )
 
 func main() {  
@@ -11,5 +11,5 @@ func main() {
     flag.Parse()
     
 	fmt.Println("Contents of file:")
-	fmt.Println(filehandling.ParseFile(*fptr))
+	fmt.Println(fileparser.ParseFile(*fptr))
 }
